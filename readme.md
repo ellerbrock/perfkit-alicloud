@@ -28,7 +28,7 @@ Here how to run a quick test with `iperf`:
 docker run \
   -it \
   -v "${HOME}/.aliyuncli:/home/perfkit/.aliyuncli:ro" \
-ellerbrock/perfkit \
+ellerbrock/perfkit-alicloud \
   --cloud=AliCloud \
   --machine_type=ecs.sn1.medium \
   --zones=eu-central-1a \
@@ -48,7 +48,7 @@ function main() {
   docker run \
     -it \
     -v "${HOME}/.aliyuncli:/home/perfkit/.aliyuncli:ro" \
-  ellerbrock/perfkit \
+  ellerbrock/perfkit-alicloud \
     --cloud=AliCloud \
     --machine_type=${MACHINE_TYPE} \
     --zones=${ZONE} \
